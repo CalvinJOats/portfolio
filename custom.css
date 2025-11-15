@@ -1,0 +1,147 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: 'Zen Antique';
+	font-weight: bold;
+	box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+a:link {
+	color: #774251;
+}
+a:visited {
+	color: #774251;
+}
+a:hover {
+	color: #9c524e;
+}
+a:active {
+	color: #9c524e;
+}
+
+.top-corners, .bottom-corners {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.entry-text {
+	font-size: 35pt;
+}
+
+.corner-art {
+	width: 10rem; 
+	height: 10rem;
+}
+
+header {
+	margin: auto;
+	margin-top: 5vw;
+	width: 80vw;
+	background-color: #a99c8d; 
+	border: 2rem double #a99c8d;
+	border-radius: 1rem;
+	background-clip: padding-box;
+}
+
+.home-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 10vw auto; 
+	padding: 2rem;  
+	height: 100%; 
+	width: 80vw; 
+	background-color: #a99c8d; 
+	border-radius: 1rem;
+}
+
+.portfolio-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: auto; 
+	margin-top: 5vw;  
+	padding: 2rem;  
+	height: 100%; 
+	width: 80vw; 
+	background-color: #a99c8d; 
+	border-radius: 1rem;
+}
+
+@media only screen and (min-width: 800px) {
+	.home-card {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 5vw auto; 
+		padding: 2rem; 
+		height: 100%; 
+		width: 90vw; 
+		background-color: #a99c8d; 
+		border-radius: 1rem;
+	}
+
+	.portfolio-card {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: auto; 
+		margin-top: 2vw; 
+		padding: 2rem; 
+		height: 100%; 
+		width: 90vw; 
+		background-color: #a99c8d; 
+		border-radius: 1rem;
+	}
+
+	header {
+		margin: auto;
+		margin-top: 2vw;
+		width: 90vw;
+		background-color: #a99c8d; 
+		border: 2rem double #a99c8d;
+		border-radius: 1rem;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.home-card {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 2vw auto; 
+		padding: 1rem; 
+		height: 100%; 
+		width: 95vw; 
+		background-color: #a99c8d; 
+		border-radius: 1rem;
+	}
+
+	.portfolio-card {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: auto; 
+		margin-top: 1vw; 
+		padding: 1rem; 
+		height: 100%; 
+		width: 95vw; 
+		background-color: #a99c8d; 
+		border-radius: 1rem;
+	}
+
+	header {
+		margin: auto;
+		margin-top: 1vw;
+		width: 95vw;
+		background-color: #a99c8d; 
+		border: 1rem double #a99c8d;
+		border-radius: 1rem;
+	}
+}

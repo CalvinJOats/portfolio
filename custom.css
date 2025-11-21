@@ -53,6 +53,23 @@ header {
 	background-clip: padding-box;
 }
 
+.top-center {
+	width: 100%;
+	align-content: center;
+}
+
+.title {
+	vertical-align: middle;
+	h1{
+		margin: auto;
+		text-align: center;
+		width: 30vmin;
+		border-width: 2vmin; 
+		border-style: groove groove ridge ridge; 
+		border-color: #8c7c79;
+	}
+}
+
 .home-card {
 	display: flex;
 	flex-direction: column;

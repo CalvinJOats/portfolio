@@ -24,7 +24,7 @@
 			</div>
 			<img src="img/Geo-Corner-1.png" class="corner-art" style="rotate: 90deg;">
 		</div>
-		<div class="middle-content">
+		<div class="middle-content about">
 			<div class="bio">
 				<img src="img/me.jpg" class="profile-picture">
 				<div class="text">
@@ -35,7 +35,7 @@
 				</div>
 			</div>
 			<div class="networking">
-				<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="calvin-oats" data-version="v1"></div>
+				<div id="badge" class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="calvin-oats" data-version="v1"></div>
 			</div>
 		</div>
 		<div class="bottom-corners">
@@ -48,27 +48,17 @@
 
 <script>
 	function checkSize() {
-		console.log(screen.width);
-
 		if(screen.width < 570) {
+			console.log("small")
 			const badge = document.querySelector("[data-size]");
 			badge.dataset.size = "medium";
 			badge.dataset.type = "VERTICAL";
+		} else {
+			console.log("large")
+			const badge = document.querySelector("[data-size]");
+			badge.dataset.size = "large";
+			badge.dataset.type = "HORIZONTAL";
 		}
 	}
 </script>
-<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-
-<!-- 
-Checklist:
-	[ ] Links to github repos
-		[ ] RSS-Reader
-		[ ] CS2350_Final_Project
-		[ ] portfolio code?
-	[ ] Link/iframe to linkedin profile
-	[ ] About me
-	[ ] Previews?
-	[ ] Style
-		[x] Landing Page
-		[ ] Main Portfolio
- -->
+<script id="linkedin" src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>

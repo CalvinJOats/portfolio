@@ -144,14 +144,15 @@ header {
 }
 
 .profile-picture {
-	width: 33%;
-	border-radius: 5vmin;
+	width: 75%;
+	border-radius: 2vmin;
+	margin: auto;
 }
 
 .bio {
 	margin: 5vmin;
-	padding-left: 5vmin;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 
 	.text {
@@ -168,18 +169,13 @@ header {
 	
 	div {
 		display: block;
-
-		iframe {
-			width: 331px;
-			height: 241px;
-			margin: auto;
-
-			body {
-				margin: 0;
-				padding: 0;
-			}
-		}
+		width: 252px;
+		margin: auto;
 	}
+}
+
+.about {
+	display: block;
 }
 
 @media only screen and (min-width: 800px) {
@@ -255,6 +251,20 @@ header {
 		border: 4vmin double #a99c8d;
 		border-radius: 2vmin;
 	}
+
+	.profile-picture {
+		width: 50%;
+		border-radius: 5vmin;
+	}
+
+	.bio {
+		padding-left: 5vmin;
+		flex-direction: row;
+	}
+
+	.networking > div {
+		width: 332px;
+	}
 }
 
 @media only screen and (min-width: 1200px) {
@@ -289,5 +299,9 @@ header {
 		background-color: #a99c8d; 
 		border: 2vmin double #a99c8d;
 		border-radius: 2vmin;
+	}
+
+	.profile-picture {
+		width: 33%;
 	}
 }

@@ -4,10 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Calvin Oats Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="linkedin.css">
 	<link rel="stylesheet" type="text/css" href="custom.css">
 	<link href='https://fonts.googleapis.com/css?family=Zen Antique' rel='stylesheet'>
 </head>
-<body style="background-color: #4b3d44;" onload="checkSize()" onresize="checkSize()">
+<body style="background-color: #4b3d44;">
 	<header>
 		<nav class="navbar">
 			<a href="index.html">Home</a>
@@ -35,9 +36,8 @@
 				</div>
 			</div>
 			<div class="networking">
-				<!-- Copied HTML from linkedin embed due to CORS and CORB issues -->
-				<div>
-					<link rel="stylesheet" href="https://static.licdn.com/sc/h/e4ahti55isrhbay1bmd5z5nsd">
+				<!-- Copied HTML from Linkedin embed due to CORS/CORB issues -->
+				<div class="linkedin-badge" style="font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif; font-size: .75vmax;">
 					<div class="profile-badge profile-badge--width-330 profile-badge--light" dir="ltr">
 						<div class="profile-badge__header profile-badge__header--light">
 							<span class="sr-only">LinkedIn</span>
@@ -94,19 +94,4 @@
 </body>
 </html>
 
-<script>
-	function checkSize() {
-		if(screen.width < 570) {
-			console.log("small")
-			const badge = document.querySelector("[data-size]");
-			badge.dataset.size = "medium";
-			badge.dataset.type = "VERTICAL";
-		} else {
-			console.log("large")
-			const badge = document.querySelector("[data-size]");
-			badge.dataset.size = "large";
-			badge.dataset.type = "HORIZONTAL";
-		}
-	}
-</script>
 <script id="linkedin" src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>

@@ -3,15 +3,16 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Portfolio</title>
+	<title>Calvin Oats Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="custom.css">
 	<link href='https://fonts.googleapis.com/css?family=Zen Antique' rel='stylesheet'>
 </head>
 <body style="background-color: #4b3d44;">
+	<a id="top"></a>
 	<header>
 		<nav class="navbar">
 			<a href="index.html">Home</a>
-			<a href="about.html">About</a>
+			<a href="about.html">About</a>		
 		</nav>
 	</header>
 	<div class="portfolio-card">
@@ -25,12 +26,71 @@
 			<img src="img/Geo-Corner-1.png" class="corner-art" style="rotate: 90deg;">
 		</div>
 		<div class="middle-content">
+
+			<div class="project-section row">
+				<div class="media">
+					<h4>Personal Portfolio</h4>
+					<a target="_blank" href="https://github.com/CalvinJOats/portfolio">
+						<h6>Github Repository</h6>	
+					</a>
+					<a target="_blank" class="project-image" href="https://github.com/CalvinJOats/portfolio">
+						<img alt="Image of a github repository containing my personal portfolio" src="img/portfolio-repo.png">
+					</a>
+				</div>
+				<div class="desc">
+					<h5>
+						Yes, this portfolio, the one you are looking at right now.
+						<br><br>
+						This was coded by hand by myself. Obviously it's not perfectly professional, but that's why I prefer focusing more on back-end and standalone development. This page was made with good old HTML and CSS. A classic static web page.
+					</h5>
+				</div>
+			</div>
 			
+			<div class="project-section row">
+				<div class="media">
+					<h4>RSS Reader</h4>
+					<a target="_blank" href="https://github.com/CalvinJOats/RSS-Reader">
+						<h6>Github Repository</h6>	
+					</a>
+					<a target="_blank" class="project-image" href="https://github.com/CalvinJOats/RSS-Reader">
+						<img alt="Image of a github repository containing an RSS reader" src="img/rss-repo.png">
+					</a>
+				</div>
+				<div class="desc">
+					<h5>
+						A basic RSS reader made using C/C++, primarily for my own learning and use.
+						<br><br>
+						This one was a good challenge. I wanted to make this one primarily to see how difficult it was to do website interactions in C/C++. The plan was to create the entire thing using as few non-standard or third-party libraries as possible. I was able to do it with only one external library (OpenSSL). In theory it works both on Windows and Linux, and it should get the most recent RSS feed from xkcd.com
+					</h5>
+				</div>
+			</div>
+
+			<div class="project-section row">
+				<div class="media">
+					<h4>UnmaskAI</h4>
+					<a target="_blank" href="https://www.unmaskai.co">
+						<h6>Website</h6>	
+					</a>
+					<a target="_blank" class="project-image" href="https://www.unmaskai.co">
+						<img alt="" src="img/unmaskai.png">
+					</a>
+				</div>
+				<div class="desc">
+					<h5>
+						This is a project taken on by myself and one friend to empower and monitor responsible AI usage in schools.
+						<br><br>
+						This was definitely the most work I have done on a project. We built a webpage as the base for it using PHP, MySQL, and Apache. To go along with this we also created a browser extension with JavaScript. We were able to use PHP as a way to bridge those apps and connect everything to a central database. We were also able to successfully integrate the Canvas LMS API to enable connections with courses that schools already have.
+					</h5>
+				</div>
+			</div>
+
 		</div>
 		<div class="bottom-corners">
 			<img src="img/Geo-Corner-1.png" class="corner-art" style="rotate: 270deg;">
 			<div class="bottom-center">
-				
+				<a href="#top">
+					<h2>Return to top</h2>
+				</a>
 			</div>
 			<img src="img/Geo-Corner-1.png" class="corner-art" style="rotate: 180deg;">
 		</div>
@@ -40,14 +100,15 @@
 
 <!-- 
 Checklist:
-	[ ] Links to github repos
-		[ ] RSS-Reader
-		[ ] CS2350_Final_Project
-		[ ] portfolio code?
-	[ ] Link/iframe to linkedin profile
+	[X] Links to github repos/sites
+		[X] RSS-Reader
+		[X] UnmaskAI
+		[X] portfolio code
+	[X] Link/iframe to linkedin profile
 	[ ] About me
-	[ ] Previews?
+	[X] Previews
 	[ ] Style
 		[x] Landing Page
-		[ ] Main Portfolio
+		[X] Main Portfolio
+		[ ] About Page
  -->

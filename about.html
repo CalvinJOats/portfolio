@@ -3,11 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Portfolio</title>
+	<title>Calvin Oats Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="custom.css">
 	<link href='https://fonts.googleapis.com/css?family=Zen Antique' rel='stylesheet'>
 </head>
-<body style="background-color: #4b3d44;">
+<body style="background-color: #4b3d44;" onload="checkSize()" onresize="checkSize()">
 	<header>
 		<nav class="navbar">
 			<a href="index.html">Home</a>
@@ -25,18 +25,39 @@
 			<img src="img/Geo-Corner-1.png" class="corner-art" style="rotate: 90deg;">
 		</div>
 		<div class="middle-content">
-			
+			<div class="bio">
+				<img src="img/me.jpg" class="profile-picture">
+				<div class="text">
+					<h2>Calvin Oats</h2>
+					<p>
+						Hello, 
+					</p>
+				</div>
+			</div>
+			<div class="networking">
+				<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="calvin-oats" data-version="v1"></div>
+			</div>
 		</div>
 		<div class="bottom-corners">
 			<img src="img/Geo-Corner-1.png" class="corner-art" style="rotate: 270deg;">
-			<div class="bottom-center">
-				
-			</div>
 			<img src="img/Geo-Corner-1.png" class="corner-art" style="rotate: 180deg;">
 		</div>
 	</div>
 </body>
 </html>
+
+<script>
+	function checkSize() {
+		console.log(screen.width);
+
+		if(screen.width < 570) {
+			const badge = document.querySelector("[data-size]");
+			badge.dataset.size = "medium";
+			badge.dataset.type = "VERTICAL";
+		}
+	}
+</script>
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
 <!-- 
 Checklist:

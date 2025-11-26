@@ -4,14 +4,15 @@ html, body{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 100svh;
+	min-height: 100svh;
 	font-family: 'Zen Antique';
 	font-weight: bold;
+	font-size: 2.5vmin;
 	box-sizing: border-box;
 }
 
 * {
-    box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 a:link {
@@ -25,6 +26,10 @@ a:hover {
 }
 a:active {
 	color: #9c524e;
+}
+
+.navbar > a {
+	margin: auto 1vmin;
 }
 
 .top-corners, .bottom-corners {
@@ -58,6 +63,18 @@ header {
 	align-content: center;
 }
 
+.bottom-center {
+	display: flex;
+	width: 100%;
+	align-content: center;
+	align-items: end;
+	justify-content: space-around;
+
+	h2 {
+		margin: 0;
+	}
+}
+
 .title {
 	vertical-align: middle;
 	h1{
@@ -80,18 +97,115 @@ header {
 	width: 80vw; 
 	background-color: #a99c8d; 
 	border-radius: 2vmin;
+	flex-grow: 1;
 }
 
 .portfolio-card {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	flex-grow: 1;
 	margin: 5vw auto;  
 	padding: 4vmin;  
-	height: 100%; 
+	min-height: 100%; 
 	width: 80vw; 
 	background-color: #a99c8d; 
 	border-radius: 1vmin;
+}
+
+.middle-content {
+	min-height: 100%;
+
+	div > h5 {
+		margin: 3vw 3vmin 6vmin;
+		padding: 0;
+		text-align: center;
+	}
+}
+
+.row {
+	margin: 4vmin;
+	display: table;
+	table-layout: fixed;
+	border: none;
+	border-spacing: 5vmin;
+	background-image: radial-gradient(ellipse farthest-side at center, #998c7d, #a99c8d);
+	border-radius: 1vmin;
+}
+
+.row:nth-child(even) {
+	direction: rtl;
+}
+
+.row:nth-child(odd) .media {
+	text-align: center
+}
+
+.media,
+.desc {
+	display: table-cell;
+	direction: ltr;
+	border: none;
+}
+
+.desc {
+	vertical-align: middle;
+	text-align: center;
+}
+
+.project-section {
+	margin: auto 4vmin; 
+	padding: 0; 
+	display: inline-block;
+	text-align: center;
+
+	h4, h6, .project-image {
+		margin: 2vmin;
+		padding: 0;
+	}
+
+	img {
+		width: 30vw;
+	}
+}
+
+.profile-picture {
+	width: 33%;
+	border-radius: 5vmin;
+}
+
+.bio {
+	margin: 5vmin;
+	padding-left: 5vmin;
+	display: flex;
+	justify-content: space-between;
+
+	.text {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.networking {
+	display: block;
+	width: auto;
+	margin: auto;
+	padding-top: 5vmin;
+	
+	div {
+		display: block;
+
+		iframe {
+			width: 331px;
+			height: 241px;
+			margin: auto;
+
+			body {
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
 }
 
 @media only screen and (min-width: 800px) {
@@ -117,6 +231,20 @@ header {
 		width: 90vw; 
 		background-color: #a99c8d; 
 		border-radius: 2vmin;
+	}
+
+	.middle-content {
+		min-height: 100%;
+
+		div > h5 {
+			margin: 12vmin 3vw auto;
+			padding: 0;
+			text-align: center;
+		}
+	}
+
+	.media, .desc {
+		width: 50%;
 	}
 
 	header {

@@ -123,34 +123,8 @@ header {
 	}
 }
 
-.row {
-	margin: 4vmin;
-	display: table;
-	table-layout: fixed;
-	border: none;
-	border-spacing: 5vmin;
-	background-image: radial-gradient(ellipse farthest-side at center, #998c7d, #a99c8d);
-	border-radius: 1vmin;
-}
-
-.row:nth-child(even) {
-	direction: rtl;
-}
-
-.row:nth-child(odd) .media {
-	text-align: center
-}
-
-.media,
-.desc {
-	display: table-cell;
-	direction: ltr;
-	border: none;
-}
-
-.desc {
-	vertical-align: middle;
-	text-align: center;
+.row, .media, .desc {
+		display: block;
 }
 
 .project-section {
@@ -243,8 +217,34 @@ header {
 		}
 	}
 
-	.media, .desc {
+	.row {
+		margin: 4vmin;
+		display: table;
+		table-layout: fixed;
+		border: none;
+		border-spacing: 5vmin;
+		background-image: radial-gradient(ellipse farthest-side at center, #998c7d, #a99c8d);
+		border-radius: 1vmin;
+	}
+	.row:nth-child(even) {
+		direction: rtl;
+	}
+
+	.row:nth-child(odd) .media {
+		text-align: center
+	}
+
+	.media,
+	.desc {
+		display: table-cell;
+		direction: ltr;
+		border: none;
 		width: 50%;
+	}
+
+	.desc {
+		vertical-align: middle;
+		text-align: center;
 	}
 
 	header {

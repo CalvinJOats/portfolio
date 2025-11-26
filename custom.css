@@ -169,8 +169,8 @@ header {
 	
 	div {
 		display: block;
-		width: 252px;
 		margin: auto;
+		max-width: 50vw;
 	}
 }
 
@@ -260,10 +260,6 @@ header {
 	.bio {
 		padding-left: 5vmin;
 		flex-direction: row;
-	}
-
-	.networking > div {
-		width: 332px;
 	}
 }
 
